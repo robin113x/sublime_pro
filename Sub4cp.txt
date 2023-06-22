@@ -22,3 +22,9 @@
   "shell": true,
   "working_dir" : "$file_path"
 }
+//RUST
+{ 
+"target": "terminus_exec",
+"shell_cmd": "rustc $file  -o $file_base_name &&  ./$file_base_name<inp.in>out.in",
+"working_dir": "$file_path"
+}
